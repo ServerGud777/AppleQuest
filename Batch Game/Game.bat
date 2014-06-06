@@ -1,5 +1,5 @@
 @echo off
-
+:Menu
 cls
 echo ษอออออออออออออออออออออออป
 echo บ Welcome to AppleQuest บ
@@ -14,9 +14,11 @@ echo บ this to look nice. :) บ
 echo ศอออออออออออออออออออออออผ
 set /p tmpChoice="Please select a number then press Enter: "
 
-goto %tmpChoice%
-
-echo not valed
+if %tmpChoice% LEQ 5 goto %tmpChoice%
+echo.
+echo Sorry that is not a valid option.
+ping -n 3 0.0.0.0 >nul
+goto :Menu
 
 
 :1
@@ -31,3 +33,5 @@ echo 4
 echo 5
 :done
 echop done
+
+pause
