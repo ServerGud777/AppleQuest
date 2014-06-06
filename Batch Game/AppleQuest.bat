@@ -1,3 +1,8 @@
+:: Please open this file with eather code pade 473 or oem 850 to see the right symbles.
+:: https://github.com/JoshuaGud777/AppleQuest
+::
+::
+::
 @echo off
 :Menu
 cls
